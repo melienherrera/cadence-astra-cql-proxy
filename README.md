@@ -1,4 +1,6 @@
-# Connect Cadence to DataStax Astra using cql-proxy
+# ⚠️ Connect Cadence to DataStax Astra using cql-proxy⚠️
+
+⚠️Under Construction
 
 ## Prerequisites
 1. Create a [DataStax Astra](https://auth.cloud.datastax.com/auth/realms/CloudUsers/protocol/openid-connect/registrations?client_id=auth-proxy&response_type=code&scope=openid+profile+email&redirect_uri=https://astra.datastax.com/welcome&) account
