@@ -1,4 +1,4 @@
-# ⚠️ Connect Cadence to DataStax Astra using cql-proxy⚠️
+# Connect Cadence to DataStax Astra using cql-proxy⚠️
 
 ⚠️Under Construction
 
