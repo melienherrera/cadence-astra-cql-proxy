@@ -13,21 +13,18 @@ services:
       - ASTRA_TOKEN=${ASTRA_TOKEN}
       - ASTRA_DATABASE_ID=${ASTRA_DATABASE_ID}
       - HEALTH_CHECK=true
-    #command:
-    #  - '--astra-token=AstraCS:BwyUxZQXavLHWyQQjxQiriqA:7cb21c0bb8a0e693f5931329500683a9d7c3c896ac234b592b2b1e13d1572079'
-    #  - '--astra-database-id=bff19ece-dcf3-4a17-8648-f92d7f00c63c'
-  #prometheus:
-  #  image: prom/prometheus:latest
-  #  volumes:
-  #    - ./prometheus_config.yml:/etc/prometheus/prometheus.yml
-  #  command:
-  #    - '--config.file=/etc/prometheus/prometheus.yml'
-  #  ports:
-  #    - '9090:9090'
-  #node-exporter:
-  #  image: prom/node-exporter
-  #  ports:
-  #    - '9100:9100'
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus_config.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - '9090:9090'
+  node-exporter:
+    image: prom/node-exporter
+    ports:
+      - '9100:9100'
   cadence:
     image: melienherrera/server:v4.1
     ports:
@@ -48,10 +45,9 @@ services:
       - "PROMETHEUS_ENDPOINT_3=0.0.0.0:8003"
       - "DYNAMIC_CONFIG_FILE_PATH=config/dynamicconfig/development.yaml"
     depends_on:
-      #- prometheus
+      #-prometheus
       cql-proxy:
-        condition: service_healthy
-      
+        condition: service_healthy  
   cadence-web:
     image: ubercadence/web:latest
     environment:
