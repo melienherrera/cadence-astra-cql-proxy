@@ -5,9 +5,10 @@
 ## Prerequisites
 1. Create a [DataStax Astra](https://auth.cloud.datastax.com/auth/realms/CloudUsers/protocol/openid-connect/registrations?client_id=auth-proxy&response_type=code&scope=openid+profile+email&redirect_uri=https://astra.datastax.com/welcome&) account
 2. Create a database
-3. Add two keyspaces `cadence` and `cadence_visibility` to the database you created
-4. Create an [Astra token](https://docs.datastax.com/en/astra/docs/manage-application-tokens.html)
-5. Obtan your Database ID
+3. Add two keyspaces `cadence` and `cadence_visibility` to the database you created via "Add Keyspace"
+  ![image](https://user-images.githubusercontent.com/3710715/161330020-ad4ca2ac-bbad-427c-9d76-b2845f8d740e.png)
+5. Create an [Astra token](https://docs.datastax.com/en/astra/docs/manage-application-tokens.html)
+6. Obtain your Database ID
   * DB identifer is the last ID in the URL when your DB is selected (the "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" part)
     * `https://astra.datastax.com/org/.../database/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
   * Or the "Datacenter ID" without the `-1` at the end (you'll have to copy and remove that trailing `-1`)
