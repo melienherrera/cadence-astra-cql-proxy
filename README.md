@@ -1,6 +1,6 @@
-# Connect Cadence to DataStax Astra using cql-proxy⚠️
+# Connect Cadence to DataStax Astra using cql-proxy (⚠️Under Construction)
 
-⚠️Under Construction
+Cadence is a orchestration engine to manage workflows. This tutorial will help you use it with DataStax Astra DB as the backend. Before setting this up, contact a Onboarding Engineer at help you get started! (details on how to contact us in the Prerequisites)  
 
 ## Prerequisites
 1. Create a [DataStax Astra](https://auth.cloud.datastax.com/auth/realms/CloudUsers/protocol/openid-connect/registrations?client_id=auth-proxy&response_type=code&scope=openid+profile+email&redirect_uri=https://astra.datastax.com/welcome&) account
@@ -13,6 +13,9 @@
     * `https://astra.datastax.com/org/.../database/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
   * Or the "Datacenter ID" without the `-1` at the end (you'll have to copy and remove that trailing `-1`)
     ![image](https://user-images.githubusercontent.com/3710715/161331138-906f4f7f-919e-4f47-a731-a855d54369c5.png)
+7. **Contact an Onboarding Engineer** to complete setup:
+ <img width="412" alt="Screen Shot 2022-04-08 at 3 03 14 PM" src="https://user-images.githubusercontent.com/85907755/162538096-567e47cb-c890-4ce2-8af9-ec6f2aa9847b.png">
+
     
  ## Setup
  1. Clone this repo
