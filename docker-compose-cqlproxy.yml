@@ -26,7 +26,8 @@ services:
     ports:
       - '9100:9100'
   cadence:
-    image: melienherrera/server:v4.1
+    #image: ubercadence/server:master-auto-setup
+    image: melissaherrera/server:server
     ports:
      - "8000:8000"
      - "8001:8001"
